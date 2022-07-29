@@ -1,0 +1,190 @@
+body
+{
+        margin: 0;
+        font-family: "Segoe UI";
+}
+
+.welcome-heading, .welcome-text
+{
+        text-align: center;
+}
+
+
+/*-------------------for new------------------------*/
+
+.topnav-for-sidebar
+{
+        overflow: hidden;
+        background-color: #1b1b1b;
+}
+
+.for-sidebar-site-title
+{
+        float: left;
+        color: #f5f5f7;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 20px;
+}
+      
+.openbtn
+{
+        float: right;
+        color: #f5f5f7;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 20px;
+}
+
+/*----------------------end of for new------------------------*/
+
+.sidenav
+{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1b1b1b;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 100px;
+        text-align: center;
+}
+      
+.sidenav a
+{
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f5f5f7;
+        display: block;
+        transition: 0.3s;
+}
+
+.sidenav .closebtn:hover
+{
+        background-color: transparent;
+}
+      
+.sidenav a:hover
+{
+        background-color: grey;
+}
+      
+.sidenav .closebtn
+{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
+      
+@media screen and (max-height: 450px)
+{
+        .sidenav
+        {
+                padding-top: 15px;
+        }
+        .sidenav a
+        {
+                font-size: 18px;
+        }
+}
+
+
+
+/*---------for top bar----------------*/
+
+.left-site-title
+{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        transition: 0.3s;
+}
+
+.topnav
+{
+        overflow: hidden;
+        background-color: #1b1b1b;
+        transition: 0.3s;
+}
+      
+.right-site-menu
+{
+        float: right;
+        color: #f5f5f7;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+}
+      
+.right-site-menu:hover, .left-site-title:hover
+{
+        background-color: teal;
+        color: white;
+        transition: 0.3s;
+}
+
+/*-----------for desktop------------*/
+
+@media screen and (min-width: 800px)
+{
+        .closebtn, .openbtn, .topnav-for-sidebar
+        {
+                display: none;
+        }
+        .main-content
+        {
+                margin-left: 300px;
+                margin-right: 300px;
+                text-align: justify;
+        }
+        .welcome-paragraph
+        {
+                font-size: 16px;
+        }
+}
+
+@media screen and (max-width: 800px)
+{
+        .topnav
+        {
+                display: none;
+        }
+        .main-content
+        {
+                margin-left: 15px;
+                margin-right: 15px;
+                text-align: justify;
+        }
+        .welcome-paragraph
+        {
+                font-size: 14px;
+        }
+}
+
+/*------------------------rest of the editing------------------------*/
+
+
+.imgs-responsive
+{
+        width: 100%;
+        height: auto;
+}
